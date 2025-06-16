@@ -77,7 +77,7 @@ async function analyzeInput() {
   }
 
   try {
-    const response = await fetch("http://127.0.0.1:5000/analyze", {
+    const response = await fetch("/analyze", {
       method: "POST",
       body: formData
     });
