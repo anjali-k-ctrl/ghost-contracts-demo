@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ghost Contracts</title>
-  <link rel="stylesheet" href="/static/style.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
 </head>
 <body>
   <div class="main-wrapper">
@@ -15,17 +15,9 @@
 
     <section class="intro-section">
       <p class="description">
-        This website uses AI to detect and explain shady, one-sided clauses hidden in everyday documents.<br />
-        It works like an <strong>“antivirus for fine print”</strong>, helping you understand what you're really agreeing to — in simple, clear language.
+        This tool uses AI-powered logic to flag risky, confusing, or hidden clauses in contracts like job offers, lease agreements, and loan terms.
+        Upload or paste any contract, and get simplified, clear feedback.
       </p>
-      <div class="how-to-use">
-        <h2>🚀 How to Use</h2>
-        <ul>
-          <li>📄 <strong>Upload</strong> your contract file or paste its content into the text box.</li>
-          <li>🔍 <strong>Click</strong> on "Analyze Contract" to let the AI scan the document.</li>
-          <li>📑 <strong>Review</strong> simplified summaries of the contract and risky clauses.</li>
-        </ul>
-      </div>
     </section>
 
     <section class="upload-section">
@@ -60,6 +52,6 @@
     </footer>
   </div>
 
-  <script src="/static/script.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
